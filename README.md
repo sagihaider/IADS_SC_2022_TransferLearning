@@ -20,6 +20,6 @@ In this Lab, you will try two ways to customize a pre-trained model:
 
 ## Task: 
 
-In your Lab_8 folder, we have stored data under <data.zip> file. This is an image dataset with 4 classes (i.e. cats, dogs, humans, horses). Please implement both Feature Extractor and Fine-Tuning methods on data.zip. Please ignore use VG166 and you are free to use any other pre-trained models https://keras.io/api/applications/
+We have stored data under <data.zip> file. This is an image dataset with 4 classes (i.e. cats, dogs, humans, horses). Please implement both Feature Extractor and Fine-Tuning methods on data.zip. Please ignore use VG166 and you are free to use any other pre-trained models https://keras.io/api/applications/
 
 Good luck! 
