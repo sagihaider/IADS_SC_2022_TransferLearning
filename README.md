@@ -1,8 +1,8 @@
-# IADS_SC_2021_TransferLearning
+# IADS_SC_2022_TransferLearning
 
 #### The Institute for Analytics and Data Science (IADS) 
-#### Analytics, Data Science & Decision Making Virtual Summer School [Link](https://www.iadssummerschool.com/)
-#### 26 July - 6 August 2021
+#### Analytics, Data Science & Decision Making Summer School [Link](https://www.iadssummerschool.com/)
+#### 25 July - 5 August 2022
 
 *** 
 
@@ -12,9 +12,9 @@ A pre-trained model is a saved network that was previously trained on a large da
 
 In this Lab, you will try two ways to customize a pre-trained model:
 
-1. **Feature Extraction**: Use the representations learned by a previous network to extract meaningful features from new samples. You simply add a new classifier, which will be trained from scratch, on top of the pre-trained model so that you can repurpose the feature maps learned previously for the dataset. You do not need to (re)train the entire model. The base convolutional network already contains features that are generically useful for classifying pictures. However, the final, classification part of the pre-trained model is specific to the original classification task, and subsequently specific to the set of classes on which the model was trained. Please read [Example 1: Transfer Learning as Feature Extractor](https://github.com/sagihaider/IADS_SC_2021_TransferLearning/blob/main/transfer_learning_FE.ipynb)
+1. **Feature Extraction**: Use the representations learned by a previous network to extract meaningful features from new samples. You simply add a new classifier, which will be trained from scratch, on top of the pre-trained model so that you can repurpose the feature maps learned previously for the dataset. You do not need to (re)train the entire model. The base convolutional network already contains features that are generically useful for classifying pictures. However, the final, classification part of the pre-trained model is specific to the original classification task, and subsequently specific to the set of classes on which the model was trained. Please read [Example 1: Transfer Learning as Feature Extractor](https://github.com/sagihaider/IADS_SC_2022_TransferLearning/blob/main/transfer_learning_FE.ipynb)
 
-2. **Fine-Tuning**: Unfreeze a few of the top layers of a frozen model base and jointly train both the newly-added classifier layers and the last layers of the base model. This allows us to "fine-tune" the higher-order feature representations in the base model in order to make them more relevant for the specific task. Please read [Example 2: Transfer Learning as Fine-Tuning](https://github.com/sagihaider/IADS_SC_2021_TransferLearning/blob/main/transfer_learning_FT.ipynb)
+2. **Fine-Tuning**: Unfreeze a few of the top layers of a frozen model base and jointly train both the newly-added classifier layers and the last layers of the base model. This allows us to "fine-tune" the higher-order feature representations in the base model in order to make them more relevant for the specific task. Please read [Example 2: Transfer Learning as Fine-Tuning](https://github.com/sagihaider/IADS_SC_2022_TransferLearning/blob/main/transfer_learning_FT.ipynb)
 
 **Note**: We will be using [VGG-16](https://www.tensorflow.org/api_docs/python/tf/keras/applications/VGG16) pre-trained model in our lab work for both feature extraction and fine-tuning. 
 
